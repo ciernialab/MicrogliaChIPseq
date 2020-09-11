@@ -6,6 +6,9 @@ Under the Select section click on the Metadata and List Accession to dowload the
 See screen shot image.
 Use the SRR_Acc_List.txt as the samples list for the SRRpull.sh script
 
+ single-end sequenced for 51 cycles 
+ adjust SRRpull.sh for single end seq files
+
 SRR5617659	Mouse_ATAC_ExVivo_Rep1
 SRR5617660	Mouse_ATAC_ExVivo_Rep2
 SRR5617663	Mouse_H3K27ac_ExVivo_Rep1
@@ -22,4 +25,14 @@ SRR5617677	Mouse_Pu1_ExVivo_Rep1
 SRR5617678	Mouse_Pu1_ExVivo_Rep2
 
 
-
+Trim with Trimmomatic for SE reads
+    TrimSE.sh
+    
+Run FastQC on pre and post trim reads
+    FastQC.sh
+    
+Run FastqScreen on post trimmed reads
+    Fastqscreen.sh
+    
+Align using bowtie2 for SE reads
+    sbatch Bowtie2alignment.sh
