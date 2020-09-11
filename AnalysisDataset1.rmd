@@ -1,8 +1,25 @@
 To find a comprehensive list of the SRR files, we use the Run Selector.
 Navigate to the bottom of the page and click “send to” and select “Run Selector”, and then press “go”.
-https://www.ncbi.nlm.nih.gov/Traces/study/?acc=PRJNA420076&o=acc_s%3Aa
+https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE89960
 
 Under the Select section click on the Metadata and List Accession to dowload the information on the experiment and the list of SRR files.
 See screen shot image.
 Use the SRR_Acc_List.txt as the samples list for the SRRpull.sh script
+
+SRR5617659	Mouse_ATAC_ExVivo_Rep1
+SRR5617660	Mouse_ATAC_ExVivo_Rep2
+SRR5617663	Mouse_H3K27ac_ExVivo_Rep1
+SRR5617664	Mouse_H3K27ac_ExVivo_Rep2
+SRR5617667	Mouse_H3K4me2_ExVivo_Rep1
+SRR5617668	Mouse_H3K4me2_ExVivo_Rep2
+SRR5617669	Mouse_Input_ExVivo_Rep1
+SRR5617670	Mouse_Input_ExVivo_Rep2
+SRR5617671	Mouse_Input_ExVivo_Rep3
+SRR5617672	Mouse_Input_ExVivo_Rep4
+SRR5617673	Mouse_Input_ExVivo_Rep5
+SRR5617674	Mouse_Input_ExVivo_Rep6
+SRR5617677	Mouse_Pu1_ExVivo_Rep1
+SRR5617678	Mouse_Pu1_ExVivo_Rep2
+
+
 
