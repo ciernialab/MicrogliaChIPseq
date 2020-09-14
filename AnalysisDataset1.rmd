@@ -57,3 +57,10 @@ QC meterics are then collected into one report using multiqc.
 
 Make UCSC genome browser bedgraph and bigwig files
   sbatch UCSCBrowserHOMER.sh 
+  
+  
+  Make plots of normalized signal over peak regions
+  Peaks_Deeptool_Plots.sh
+  
+  Look at overalpping peaks with Upset plots in R
+  upset.sh
