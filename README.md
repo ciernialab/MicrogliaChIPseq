@@ -71,34 +71,7 @@ QC meterics are then collected into one report using multiqc.
     
 # 8. shift ATAC seq for Tn5 cut sites
     https://github.com/TheJacksonLaboratory/ATAC-seq
-From Asli Uyar, PhD "The bam file needs to be adjusted because Tn5 has a 9bp binding site, and it binds in the middle.
-Functionally that means that the DNA had to be accessible at least 4.5bp on either site of the insertion.
-
-      To my understanding the 4 for positive and 5 for negative was chosen at random, that could be wrong
-      for the negative strand the start position is the 5'-most, which doesn't actually change, it's the 
-      3'-position that changes, and to modify that you only need to change the read sequence and size.
-
-  If the read is on the positive strand (as determined by the sam flag) 
-
-          1.  it will add 4 to the start, 
-          2.  and subtract 5 from the partner start
-
-  if the read is on the negative strand, 
-
-          1. 5 will subtracted from it's start 
-          2. and 4 added to its mate start.
-
-   The length and read type will be adjusted in both cases and the read and quality string trimmed appropriately,
-Example of how a BAM file will be altered
-
-Original: HWI-ST374:226:C24HPACXX:4:2214:15928:96004 99 chrI 427 255 101M = 479 153 HWI-ST374:226:C24HPACXX:4:2214:15928:96004 147 chrI 479 255 101M = 427 -153
-
-Altered: HWI-ST374:226:C24HPACXX:4:2214:15928:96004 99 chrI 431 255 97M = 474 144 HWI-ST374:226:C24HPACXX:4:2214:15928:96004 147 chrI 479 255 96M = 431 -144
-
-  sbatch Tn5Shift.sh
-
-This calls to: ATAC_BAM_shifter_gappedAlign.pl makes sample.shift.bam out put and .bai file
-
+> fails on SE data > not run. No shifting performed on this dataset.
 
 # 9. Make Tag directories on individual samples and pools. 
  From GEO: The tag directories for the input DNA were likewise combined. Peaks were then called on the pooled tags with the pooled input DNA as background using HOMER’s findPeaks command with the following parameters for the PU.1 ChIP-seq: “-style factor -size 200 -minDist 200” and the following parameters for the H3K27ac and H3K4me2 ChIP-seq: “-style histone -size 500 -minDist 1000 -region.” The “-tbp” parameter was set to the number of replicates in the pool.
