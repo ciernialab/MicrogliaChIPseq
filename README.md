@@ -2,9 +2,6 @@
 Reanalysis of published mouse microglia ChIPseq datasets
 
 Goal: Analyze ChIPseq data from mouse microglia from published papers:
-https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE62826
-https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSM1545960
-
 https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE89960
 
 Dataset #1 H3K27ac ChIPseq from acutely isolated microglia 
@@ -16,6 +13,23 @@ Dataset #3 ATAC-seq from acutely isolated microglia:
 Dataset #4 Inupt samples
 
 Dataset #5 PU.1 ChIPseq acutely isolated microglia
+
+https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE130960
+
+Dataset #6  H3K27ac ChIPseq from acutely isolated microglia from Cx3cr1 KO or WT
+
+Dataset #7 RNA PolII ChIPseq from acutely isolated microglia from Cx3cr1 KO or WT
+
+Dataset #8 Input from acutely isolated microglia from Cx3cr1 KO or WT
+
+https://www.ncbi.nlm.nih.gov/Traces/study/?acc=PRJNA267541&o=acc_s%3Aa
+
+Dataset #9 H3K4me1 from acutely isolated microglia brain
+
+Dataset #10 H3K27ac from acutely isolated microglia brain
+
+Dattaset !33 H3K4me2 from acutely isolated microglia brain
+
 
 # See DataSetInfo.txt for more details etc.
 
@@ -45,6 +59,11 @@ SRR5617673	Mouse_Input_ExVivo_Rep5
 SRR5617674	Mouse_Input_ExVivo_Rep6
 SRR5617677	Mouse_Pu1_ExVivo_Rep1
 SRR5617678	Mouse_Pu1_ExVivo_Rep2
+
+
+https://www.ncbi.nlm.nih.gov/Traces/study/?acc=PRJNA267541&o=acc_s%3Aa
+
+https://www.ncbi.nlm.nih.gov/Traces/study/?acc=PRJNA542087&o=acc_s%3Aa
 
 # 2. Trim with Trimmomatic for SE reads
     TrimSE.sh
