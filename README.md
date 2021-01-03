@@ -28,7 +28,7 @@ Dataset #9 H3K4me1 from acutely isolated microglia brain
 
 Dataset #10 H3K27ac from acutely isolated microglia brain
 
-Dattaset !33 H3K4me2 from acutely isolated microglia brain
+Dattaset #11 H3K4me2 from acutely isolated microglia brain
 
 
 # See DataSetInfo.txt for more details etc.
