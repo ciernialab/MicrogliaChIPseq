@@ -1,0 +1,8 @@
+cbMG_H3K27me3
+cbMG_Input
+StrMG_H3K27me3
+StrMG_Input
+cxMg_H3K27me3
+cxMg_Input
+Pooltag_H3K27me3_allregions
+Pooltag_Input
