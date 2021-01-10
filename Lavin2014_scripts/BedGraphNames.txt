@@ -1,0 +1,17 @@
+H3K27ac_1
+H3K27ac_2
+H3K27ac_3
+H3K27ac_4
+H3K27ac_5
+H3K27ac_6
+H3K4me1_1
+H3K4me1_2
+H3K4me1_3
+H3K4me1_4
+H3K4me1_5
+H3K4me2_1
+H3K4me2_2
+Pooltag_H3K27ac
+Pooltag_H3K4me1
+Pooltag_H3K4me2
+Pooltag_Input
