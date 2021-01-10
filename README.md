@@ -2,6 +2,9 @@
 Reanalysis of published mouse microglia ChIPseq datasets
 
 Goal: Analyze ChIPseq data from mouse microglia from published papers:
+
+	
+Gosselin D, Skola D, Coufal NG, Holtman IR et al. An environment-dependent transcriptional network specifies human microglia identity. Science 2017 Jun 23;356(6344). PMID: 28546318
 https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE89960
 
 Dataset #1 H3K27ac ChIPseq from acutely isolated microglia 
@@ -14,6 +17,8 @@ Dataset #4 Inupt samples
 
 Dataset #5 PU.1 ChIPseq acutely isolated microglia
 
+
+Gyoneva S, Hosur R, Gosselin D, Zhang B et al. <i>Cx3cr1-</i>deficient microglia exhibit a premature aging transcriptome. Life Sci Alliance 2019 Dec;2(6). PMID: 31792059
 https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE130960
 
 Dataset #6  H3K27ac ChIPseq from acutely isolated microglia from Cx3cr1 KO or WT
@@ -22,6 +27,9 @@ Dataset #7 RNA PolII ChIPseq from acutely isolated microglia from Cx3cr1 KO or W
 
 Dataset #8 Input from acutely isolated microglia from Cx3cr1 KO or WT
 
+
+Lavin Y, Winter D, Blecher-Gonen R, David E et al. Tissue-resident macrophage enhancer landscapes are shaped by the local microenvironment. Cell 2014 Dec 4;159(6):1312-26. PMID: 25480296
+https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE63339
 https://www.ncbi.nlm.nih.gov/Traces/study/?acc=PRJNA267541&o=acc_s%3Aa
 
 Dataset #9 H3K4me1 from acutely isolated microglia brain
@@ -30,8 +38,26 @@ Dataset #10 H3K27ac from acutely isolated microglia brain
 
 Dattaset #11 H3K4me2 from acutely isolated microglia brain
 
+Dataset #12 Input
 
-# See DataSetInfo.txt for more details etc.
+	
+Ayata P, Badimon A, Strasburger HJ, Duff MK et al. Epigenetic regulation of brain region-specific microglia clearance activity. Nat Neurosci 2018 Aug;21(8):1049-1060. PMID: 30038282
+https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE108356
+
+Dataset #13 Microgila isolated from Cerebellum H3K27me3 ChIP
+
+Dataset #14 Microgila isolated from Striatum H3K27me3 ChIP
+
+Dataset #15 Microgila isolated from Cortex H3K27me3 ChIP
+
+Dataset #16 Microgila isolated from Cerebellum Input
+
+Dataset #17 Microgila isolated from Striatum Input
+
+Dataset #18 Microgila isolated from Cortex Input
+
+
+# For each GEO entry teh following was performed. As an example for each step the Gosselin 2017 workflow is shown in detail below. 
 
 # 1. Get SRR files
 To find a comprehensive list of the SRR files, we use the Run Selector.
