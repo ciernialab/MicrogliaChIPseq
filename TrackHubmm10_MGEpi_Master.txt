@@ -1,0 +1,2126 @@
+hub Microglia Epigenomics
+shortLabel Microglia Epigenomics
+longLabel Microglia Epigenomics
+useOneFile on
+email annie.ciernia@ubc.ca
+
+genome mm10
+
+
+#http://genome.ucsc.edu/cgi-bin/hgTracks?db=mm10&hubUrl=http://microgliome.biochem.ubc.ca/BigWigs/TrackHubmm10_MGEpi_Master.txt
+
+
+############################################################################
+#Shemer et al 2020
+############################################################################
+track Shemer2020
+superTrack on show
+shortLabel  Shemer2020 on
+longLabel Shemer et al 2020
+html examplePage
+
+
+
+############################################################################
+#ATAC baseline
+############################################################################
+
+track Baseline_ATAC_Shemer
+parent Shemer2020
+container multiWig
+shortLabel Baseline_ATAC_Shemer
+longLabel Baseline_ATAC_Shemer
+type bigWig
+visibility full
+aggregate transparentOverlay
+showSubtrackColorOnUi on
+
+	track Baseline_ATAC_1
+	bigDataUrl http://microgliome.biochem.ubc.ca/BigWigs/Baseline_ATAC_Repl1.bw
+	shortLabel Baseline ATAC 1
+	longLabel Baseline ATAC 1
+	parent Baseline_ATAC_Shemer
+	color 198,34,71
+	viewLimits 0:1000
+	type bigWig
+
+	track Baseline_ATAC_2
+	bigDataUrl http://microgliome.biochem.ubc.ca/BigWigs/Baseline_ATAC_Repl2.bw
+	shortLabel Baseline ATAC 2
+	longLabel Baseline ATAC 2
+	parent Baseline_ATAC_Shemer
+	color 140,34,240
+	viewLimits 0:1000
+	type bigWig
+
+	track Baseline_ATAC_3
+	bigDataUrl http://microgliome.biochem.ubc.ca/BigWigs/Baseline_ATAC_Repl3.bw
+	shortLabel Baseline ATAC 3
+	longLabel Baseline ATAC 3
+	parent Baseline_ATAC_Shemer
+	color 34,58,240
+	viewLimits 0:1000
+	type bigWig
+
+
+	track Baseline_ATAC_4
+	bigDataUrl http://microgliome.biochem.ubc.ca/BigWigs/Baseline_ATAC_Repl4.bw
+	shortLabel Baseline ATAC 4
+	longLabel Baseline ATAC 4
+	parent Baseline_ATAC_Shemer
+	color 250,0,0
+	viewLimits 0:1000
+	type bigWig
+
+
+	track Baseline_ATAC_5
+	bigDataUrl http://microgliome.biochem.ubc.ca/BigWigs/Baseline_ATAC_Repl5.bw
+	shortLabel Baseline ATAC 5
+	longLabel Baseline ATAC 5
+	parent Baseline_ATAC_Shemer
+	color 0,250,0
+	viewLimits 0:1000
+	type bigWig
+
+
+	track Baseline_ATAC_6
+	bigDataUrl http://microgliome.biochem.ubc.ca/BigWigs/Baseline_ATAC_Repl6.bw
+	shortLabel Baseline ATAC 6
+	longLabel Baseline ATAC 6
+	parent Baseline_ATAC_Shemer
+	color 0,0,250
+	viewLimits 0:1000
+	type bigWig
+
+	track Baseline_ATAC_7
+	bigDataUrl http://microgliome.biochem.ubc.ca/BigWigs/Baseline_ATAC_Repl7.bw
+	shortLabel Baseline ATAC 7
+	longLabel Baseline ATAC 7
+	parent Baseline_ATAC_Shemer
+	color 0,100,250
+	viewLimits 0:1000
+	type bigWig
+	
+	track Baseline_ATAC_8
+	bigDataUrl http://microgliome.biochem.ubc.ca/BigWigs/Baseline_ATAC_Repl8.bw
+	shortLabel Baseline ATAC 8
+	longLabel Baseline ATAC 8
+	parent Baseline_ATAC_Shemer
+	color 100,0,250
+	viewLimits 0:1000
+	type bigWig
+
+
+#peak files
+ track Baseline_ATAC_peaks_Shemer
+    parent Shemer2020
+    bigDataUrl http://microgliome.biochem.ubc.ca/BigWigs/Homerpeaks_ATAC.Steady.bb
+    shortLabel homer peaks Baseline ATAC Shemer
+    longLabel homer peaks Baseline ATAC Shemer
+    type bigBed
+    visibility squish
+    priority 30
+
+
+
+
+############################################################################
+#ATAC LPS12hr
+############################################################################
+
+track LPS12hr_ATAC_Shemer
+parent Shemer2020
+container multiWig
+shortLabel LPS12hr_ATAC_Shemer
+longLabel LPS12hr_ATAC_Shemer
+type bigWig
+visibility full
+aggregate transparentOverlay
+showSubtrackColorOnUi on
+
+	track LPS12hr_ATAC_1
+	bigDataUrl http://microgliome.biochem.ubc.ca/BigWigs/LPS12hr_ATAC_Repl1.bw
+	shortLabel LPS12hr ATAC 1
+	longLabel LPS12hr ATAC 1
+	parent LPS12hr_ATAC_Shemer
+	color 198,34,71
+	viewLimits 0:1000
+	type bigWig
+
+	track LPS12hr_ATAC_2
+	bigDataUrl http://microgliome.biochem.ubc.ca/BigWigs/LPS12hr_ATAC_Repl2.bw
+	shortLabel LPS12hr ATAC 2
+	longLabel LPS12hr ATAC 2
+	parent LPS12hr_ATAC_Shemer
+	color 140,34,240
+	viewLimits 0:1000
+	type bigWig
+
+	track LPS12hr_ATAC_3
+	bigDataUrl http://microgliome.biochem.ubc.ca/BigWigs/LPS12hr_ATAC_Repl3.bw
+	shortLabel LPS12hr ATAC 3
+	longLabel LPS12hr ATAC 3
+	parent LPS12hr_ATAC_Shemer
+	color 34,58,240
+	viewLimits 0:1000
+	type bigWig
+
+
+	track LPS12hr_ATAC_4
+	bigDataUrl http://microgliome.biochem.ubc.ca/BigWigs/LPS12hr_ATAC_Repl4.bw
+	shortLabel LPS12hr ATAC 4
+	longLabel LPS12hr ATAC 4
+	parent LPS12hr_ATAC_Shemer
+	color 250,0,0
+	viewLimits 0:1000
+	type bigWig
+
+
+
+#peak files
+ track LPS12hr_ATAC_peaks_Shemer
+    parent Shemer2020
+    bigDataUrl http://microgliome.biochem.ubc.ca/BigWigs/Homerpeaks_ATAC.12hrLPS.bb
+    shortLabel homer peaks LPS12hr ATAC Shemer
+    longLabel homer peaks LPS12hr ATAC Shemer
+    type bigBed
+    visibility squish
+    priority 30
+
+
+
+
+############################################################################
+#ATAC LPS24hr
+############################################################################
+
+track LPS24hr_ATAC_Shemer
+parent Shemer2020
+container multiWig
+shortLabel LPS24hr_ATAC_Shemer
+longLabel LPS24hr_ATAC_Shemer
+type bigWig
+visibility full
+aggregate transparentOverlay
+showSubtrackColorOnUi on
+
+	track LPS24hr_ATAC_1
+	bigDataUrl http://microgliome.biochem.ubc.ca/BigWigs/LPS24hr_ATAC_Repl1.bw
+	shortLabel LPS24hr ATAC 1
+	longLabel LPS24hr ATAC 1
+	parent LPS24hr_ATAC_Shemer
+	color 198,34,71
+	viewLimits 0:1000
+	type bigWig
+
+	track LPS24hr_ATAC_2
+	bigDataUrl http://microgliome.biochem.ubc.ca/BigWigs/LPS24hr_ATAC_Repl2.bw
+	shortLabel LPS24hr ATAC 2
+	longLabel LPS24hr ATAC 2
+	parent LPS24hr_ATAC_Shemer
+	color 140,34,240
+	viewLimits 0:1000
+	type bigWig
+
+	track LPS24hr_ATAC_3
+	bigDataUrl http://microgliome.biochem.ubc.ca/BigWigs/LPS24hr_ATAC_Repl3.bw
+	shortLabel LPS24hr ATAC 3
+	longLabel LPS24hr ATAC 3
+	parent LPS24hr_ATAC_Shemer
+	color 34,58,240
+	viewLimits 0:1000
+	type bigWig
+
+
+	track LPS24hr_ATAC_4
+	bigDataUrl http://microgliome.biochem.ubc.ca/BigWigs/LPS24hr_ATAC_Repl4.bw
+	shortLabel LPS24hr ATAC 4
+	longLabel LPS24hr ATAC 4
+	parent LPS24hr_ATAC_Shemer
+	color 250,0,0
+	viewLimits 0:1000
+	type bigWig
+
+
+
+#peak files
+ track LPS24hr_ATAC_peaks_Shemer
+    parent Shemer2020
+    bigDataUrl http://microgliome.biochem.ubc.ca/BigWigs/Homerpeaks_ATAC.24hrLPS.bb
+    shortLabel homer peaks LPS24hr ATAC Shemer
+    longLabel homer peaks LPS24hr ATAC Shemer
+    type bigBed
+    visibility squish
+    priority 30
+
+
+
+
+############################################################################
+#ATAC LPS7d
+############################################################################
+
+track LPS7d_ATAC_Shemer
+parent Shemer2020
+container multiWig
+shortLabel LPS7d_ATAC_Shemer
+longLabel LPS7d_ATAC_Shemer
+type bigWig
+visibility full
+aggregate transparentOverlay
+showSubtrackColorOnUi on
+
+	track LPS7d_ATAC_1
+	bigDataUrl http://microgliome.biochem.ubc.ca/BigWigs/LPS2wks_ATAC_Repl1.bw
+	shortLabel LPS7d ATAC 1
+	longLabel LPS7d ATAC 1
+	parent LPS7d_ATAC_Shemer
+	color 198,34,71
+	viewLimits 0:1000
+	type bigWig
+
+	track LPS7d_ATAC_2
+	bigDataUrl http://microgliome.biochem.ubc.ca/BigWigs/LPS2wks_ATAC_Repl2.bw
+	shortLabel LPS7d ATAC 2
+	longLabel LPS7d ATAC 2
+	parent LPS7d_ATAC_Shemer
+	color 140,34,240
+	viewLimits 0:1000
+	type bigWig
+
+	track LPS7d_ATAC_3
+	bigDataUrl http://microgliome.biochem.ubc.ca/BigWigs/LPS2wks_ATAC_Repl3.bw
+	shortLabel LPS7d ATAC 3
+	longLabel LPS7d ATAC 3
+	parent LPS7d_ATAC_Shemer
+	color 34,58,240
+	viewLimits 0:1000
+	type bigWig
+
+
+	track LPS7d_ATAC_4
+	bigDataUrl http://microgliome.biochem.ubc.ca/BigWigs/LPS2wks_ATAC_Repl4.bw
+	shortLabel LPS7d ATAC 4
+	longLabel LPS7d ATAC 4
+	parent LPS7d_ATAC_Shemer
+	color 250,0,0
+	viewLimits 0:1000
+	type bigWig
+
+
+
+#peak files
+ track LPS7d_ATAC_peaks_Shemer
+    parent Shemer2020
+    bigDataUrl http://microgliome.biochem.ubc.ca/BigWigs/Homerpeaks_ATAC.7dLPS.bb
+    shortLabel homer peaks LPS7d ATAC Shemer
+    longLabel homer peaks LPS7d ATAC Shemer
+    type bigBed
+    visibility squish
+    priority 30
+
+
+############################################################################
+#ATAC DE PEAKS
+############################################################################
+
+#peak files
+ track DEpeaks_12hrLPSvsBaseline_ATAC_Shemer
+    parent Shemer2020
+    bigDataUrl http://microgliome.biochem.ubc.ca/BigWigs/FDRfiltered.baselinevs12hrLPS_ATACdiffpeaks.bb
+    shortLabel homer DE peaks 12hrLPS vs Baseline ATAC Shemer
+    longLabel homer DE peaks 12hr post LPS vs Baseline ATAC Shemer
+    type bigBed
+    visibility squish
+    priority 30
+    
+    track DEpeaks_24hrLPSvsBaseline_ATAC_Shemer
+    parent Shemer2020
+    bigDataUrl http://microgliome.biochem.ubc.ca/BigWigs/FDRfiltered.baselinevs24hrLPS_ATACdiffpeaks.bb
+    shortLabel homer DE peaks 24hrLPS vs Baseline ATAC Shemer
+    longLabel homer DE peaks 24hr post LPS vs Baseline ATAC Shemer
+    type bigBed
+    visibility squish
+    priority 30
+    
+    track DEpeaks_7dLPSvsBaseline_ATAC_Shemer
+    parent Shemer2020
+    bigDataUrl http://microgliome.biochem.ubc.ca/BigWigs/FDRfiltered.baselinevs7dLPS_ATACdiffpeaks.bb
+    shortLabel homer DE peaks 7d LPS vs Baseline ATAC Shemer
+    longLabel homer DE peaks 7d post LPS vs Baseline ATAC Shemer
+    type bigBed
+    visibility squish
+    priority 30
+
+hub Microglia Epigenomics
+shortLabel Microglia Epigenomics
+longLabel Microglia Epigenomics
+useOneFile on
+email annie.ciernia@ubc.ca
+
+genome mm10
+
+
+#http://genome.ucsc.edu/cgi-bin/hgTracks?db=mm10&hubUrl=http://microgliome.biochem.ubc.ca/BigWigs/TrackHubmm10_MGEpi.txt
+
+
+############################################################################
+#Gosselin et al 2017
+############################################################################
+track Gosselin2017
+superTrack on show
+shortLabel  Gosselin2017 on
+longLabel Gosselin et al 2017
+html examplePage
+
+
+############################################################################
+#ATAC
+############################################################################
+track WT_ATAC_Gosselin
+parent Gosselin2017
+container multiWig
+shortLabel WT_ATAC_Gosselin
+longLabel WT_ATAC_Gosselin
+type bigWig
+visibility full
+aggregate transparentOverlay
+showSubtrackColorOnUi on
+
+	track ATAC_repl1
+	bigDataUrl http://microgliome.biochem.ubc.ca/BigWigs/ATAC_Repl1.bw
+	shortLabel WT ATAC repl1
+	longLabel WT ATAC repl1
+	parent WT_ATAC_Gosselin
+	color 198,34,71
+	viewLimits 0:1000
+	type bigWig
+
+	track ATAC_repl2
+	bigDataUrl http://microgliome.biochem.ubc.ca/BigWigs/ATAC_Repl2.bw
+	shortLabel WT ATAC repl2
+	longLabel WT ATAC repl2
+	parent WT_ATAC_Gosselin
+	color 140,34,240
+	viewLimits 0:1000
+	type bigWig
+
+#peak files
+ track ATAC_peaks_Gosselin
+    parent Gosselin2017
+    bigDataUrl http://microgliome.biochem.ubc.ca/BigWigs/Homerpeaks_ATAC.bb
+    shortLabel homer peaks ATAC Gosselin
+    longLabel homer peaks ATAC Gosselin
+    type bigBed
+    visibility squish
+    priority 30
+
+
+
+############################################################################
+#H3K27ac
+############################################################################
+
+track WT_H3K27ac_Gosselin
+parent Gosselin2017
+container multiWig
+shortLabel WT_H3K27ac_Gosselin
+longLabel WT_H3K27ac_Gosselin
+type bigWig
+visibility full
+aggregate transparentOverlay
+showSubtrackColorOnUi on
+
+	track H3K27ac_repl1
+	bigDataUrl http://microgliome.biochem.ubc.ca/BigWigs/H3K27ac_Repl1.bw
+	shortLabel WT H3K27ac repl1
+	longLabel WT H3K27ac repl1
+	parent WT_H3K27ac_Gosselin
+	color 198,34,71
+	viewLimits 0:1000
+	type bigWig
+
+	track H3K27ac_repl2
+	bigDataUrl http://microgliome.biochem.ubc.ca/BigWigs/H3K27ac_Repl2.bw
+	shortLabel WT H3K27ac repl2
+	longLabel WT H3K27ac repl2
+	parent WT_H3K27ac_Gosselin
+	color 140,34,240
+	viewLimits 0:1000
+	type bigWig
+
+#peak files
+ track H3K27ac_peaks_Gosselin
+    parent Gosselin2017
+    bigDataUrl http://microgliome.biochem.ubc.ca/BigWigs/Homerpeaks_Gosselin_H3K27ac.bb
+    shortLabel homer peaks H3K27ac Gosselin
+    longLabel homer peaks H3K27ac Gosselin
+    type bigBed
+    visibility squish
+    priority 30
+
+
+############################################################################
+#H3K4me2
+############################################################################
+
+track WT_H3K4me2_Gosselin
+parent Gosselin2017
+container multiWig
+shortLabel WT_H3K4me2_Gosselin
+longLabel WT_H3K4me2_Gosselin
+type bigWig
+visibility full
+aggregate transparentOverlay
+showSubtrackColorOnUi on
+
+	track H3K4me2_repl1
+	bigDataUrl http://microgliome.biochem.ubc.ca/BigWigs/H3K4me2_Repl1.bw
+	shortLabel WT H3K4me2 repl1
+	longLabel WT H3K4me2 repl1
+	parent WT_H3K4me2_Gosselin
+	color 198,34,71
+	viewLimits 0:1000
+	type bigWig
+
+	track H3K4me2_repl2
+	bigDataUrl http://microgliome.biochem.ubc.ca/BigWigs/H3K4me2_Repl2.bw
+	shortLabel WT H3K4me2 repl2
+	longLabel WT H3K4me2 repl2
+	parent WT_H3K4me2_Gosselin
+	color 140,34,240
+	viewLimits 0:1000
+	type bigWig
+
+#peak files
+ track H3K4me2_peaks_Gosselin
+    parent Gosselin2017
+    bigDataUrl http://microgliome.biochem.ubc.ca/BigWigs/Homerpeaks_Gosselin_H3K4me2.bb
+    shortLabel homer peaks H3K4me2 Gosselin
+    longLabel homer peaks H3K4me2 Gosselin
+    type bigBed
+    visibility squish
+    priority 30
+
+
+############################################################################
+#PU1
+############################################################################
+
+track WT_PU1_Gosselin
+parent Gosselin2017
+container multiWig
+shortLabel WT_PU1_Gosselin
+longLabel WT_PU1_Gosselin
+type bigWig
+visibility full
+aggregate transparentOverlay
+showSubtrackColorOnUi on
+
+	track PU1_repl1
+	bigDataUrl http://microgliome.biochem.ubc.ca/BigWigs/PU1_Repl1.bw
+	shortLabel WT PU1 repl1
+	longLabel WT PU1 repl1
+	parent WT_PU1_Gosselin
+	color 198,34,71
+	viewLimits 0:1000
+	type bigWig
+
+	track PU1_repl2
+	bigDataUrl http://microgliome.biochem.ubc.ca/BigWigs/PU1_Repl2.bw
+	shortLabel WT PU1 repl2
+	longLabel WT PU1 repl2
+	parent WT_PU1_Gosselin
+	color 140,34,240
+	viewLimits 0:1000
+	type bigWig
+
+#peak files
+ track PU1_peaks_Gosselin
+    parent Gosselin2017
+    bigDataUrl http://microgliome.biochem.ubc.ca/BigWigs/Homerpeaks_PU1.bb
+    shortLabel homer peaks PU1 Gosselin
+    longLabel homer peaks PU1 Gosselin
+    type bigBed
+    visibility squish
+    priority 30
+
+
+###########################################################################
+#Input
+############################################################################
+ track Input_Gosselin
+    parent Gosselin2017
+    bigDataUrl http://microgliome.biochem.ubc.ca/BigWigs/Input_Pool.bw
+    shortLabel Input Gosselin
+    longLabel Input Gosselin
+    type bigWig
+    visibility squish
+
+
+hub Microglia Epigenomics
+shortLabel Microglia Epigenomics
+longLabel Microglia Epigenomics
+useOneFile on
+email annie.ciernia@ubc.ca
+
+genome mm10
+
+
+#http://genome.ucsc.edu/cgi-bin/hgTracks?db=mm10&hubUrl=http://microgliome.biochem.ubc.ca/BigWigs/TrackHubmm10_MGEpi.txt
+
+
+############################################################################
+#Gyoneva et al 2019
+############################################################################
+track Gyoneva2019
+superTrack on show
+shortLabel  Gyoneva2019 on
+longLabel Gyoneva et al 2019
+html examplePage
+
+
+
+
+############################################################################
+#H3K27ac
+############################################################################
+
+track WT_H3K27ac_Gyoneva
+parent Gyoneva2019
+container multiWig
+shortLabel WT_H3K27ac_Gyoneva
+longLabel WT_H3K27ac_Gyoneva
+type bigWig
+visibility full
+aggregate transparentOverlay
+showSubtrackColorOnUi on
+
+	track WT_H3K27ac_Repl1
+	bigDataUrl http://microgliome.biochem.ubc.ca/BigWigs/WT_H3k27ac_F.bw
+	shortLabel WT H3K27ac repl1
+	longLabel WT H3K27ac repl1 Female
+	parent WT_H3K27ac_Gyoneva
+	color 198,34,71
+	viewLimits 0:1000
+	type bigWig
+
+	track WT_H3K27ac_Repl2
+	bigDataUrl http://microgliome.biochem.ubc.ca/BigWigs/WT_H3k27ac_M.bw
+	shortLabel WT H3K27ac repl2
+	longLabel WT H3K27ac repl2 Male
+	parent WT_H3K27ac_Gyoneva
+	color 140,34,240
+	viewLimits 0:1000
+	type bigWig
+
+#peak files
+ track WT_H3K27ac_peaks_Gyoneva
+    parent Gyoneva2019
+    bigDataUrl http://microgliome.biochem.ubc.ca/BigWigs/Homerpeaks_H3K27ac_Cx3cr1WT.bb
+    shortLabel homer peaks WT H3K27ac Gyoneva
+    longLabel homer peaks WT H3K27ac Gyoneva
+    type bigBed
+    visibility squish
+    priority 30
+
+
+
+track Cx3cr1KO_H3K27ac_Gyoneva
+parent Gyoneva2019
+container multiWig
+shortLabel Cx3cr1KO_H3K27ac_Gyoneva
+longLabel Cx3cr1KO_H3K27ac_Gyoneva
+type bigWig
+visibility full
+aggregate transparentOverlay
+showSubtrackColorOnUi on
+
+	track Cx3cr1KO_H3K27ac_repl1
+	bigDataUrl http://microgliome.biochem.ubc.ca/BigWigs/Cx3cr1KO_H3k27ac_F.bw
+	shortLabel Cx3cr1KO H3K27ac repl1
+	longLabel Cx3cr1KO H3K27ac repl1 Female
+	parent Cx3cr1KO_H3K27ac_Gyoneva
+	color 198,34,71
+	viewLimits 0:1000
+	type bigWig
+
+	track Cx3cr1KO_H3K27ac_repl2
+	bigDataUrl http://microgliome.biochem.ubc.ca/BigWigs/Cx3cr1KO_H3k27ac_M.bw
+	shortLabel Cx3cr1KO H3K27ac repl2
+	longLabel Cx3cr1KO H3K27ac repl2 Male
+	parent Cx3cr1KO_H3K27ac_Gyoneva
+	color 140,34,240
+	viewLimits 0:1000
+	type bigWig
+
+#peak files
+ track Cx3cr1KO_H3K27ac_peaks_Gyoneva
+    parent Gyoneva2019
+    bigDataUrl http://microgliome.biochem.ubc.ca/BigWigs/Homerpeaks_H3K27ac_Cx3cr1KO.bb
+    shortLabel homer peaks
+    longLabel homer peaks Cx3cr1KO H3K27ac
+    type bigBed
+    visibility squish
+    priority 30
+
+############################################################################
+#Rbp2
+############################################################################
+
+track WT_Rbp2_Gyoneva
+parent Gyoneva2019
+container multiWig
+shortLabel WT_Rbp2_Gyoneva
+longLabel WT_Rbp2_Gyoneva
+type bigWig
+visibility full
+aggregate transparentOverlay
+showSubtrackColorOnUi on
+
+	track WT_Rbp2_repl1
+	bigDataUrl http://microgliome.biochem.ubc.ca/BigWigs/WT_Rpb2_F.bw
+	shortLabel WT Rbp2 repl1
+	longLabel WT Rbp2 repl1 Female
+	parent WT_Rbp2_Gyoneva
+	color 198,34,71
+	viewLimits 0:1000
+	type bigWig
+
+	track WT_Rbp2_repl2
+	bigDataUrl http://microgliome.biochem.ubc.ca/BigWigs/WT_Rpb2_M.bw
+	shortLabel WT Rbp2 repl2
+	longLabel WT Rbp2 repl2 Male
+	parent WT_Rbp2_Gyoneva
+	color 140,34,240
+	viewLimits 0:1000
+	type bigWig
+
+#peak files
+ track WT_Rbp2_peaks_Gyoneva
+    parent Gyoneva2019
+    bigDataUrl http://microgliome.biochem.ubc.ca/BigWigs/Homerpeaks_Rbp2_Cx3cr1WT.bb
+    shortLabel homer peaks WT Rbp2 Gyoneva
+    longLabel homer peaks WT Rbp2 Gyoneva
+    type bigBed
+    visibility squish
+    priority 30
+
+
+
+track Cx3cr1KO_Rbp2_Gyoneva
+parent Gyoneva2019
+container multiWig
+shortLabel Cx3cr1KO_Rbp2_Gyoneva
+longLabel Cx3cr1KO_Rbp2_Gyoneva
+type bigWig
+visibility full
+aggregate transparentOverlay
+showSubtrackColorOnUi on
+
+	track Cx3cr1KO_Rbp2_repl1
+	bigDataUrl http://microgliome.biochem.ubc.ca/BigWigs/Cx3cr1KO_Rpb2_F.bw
+	shortLabel Cx3cr1KO Rbp2 repl1
+	longLabel Cx3cr1KO Rbp2 repl1 Female
+	parent Cx3cr1KO_Rbp2_Gyoneva
+	color 198,34,71
+	viewLimits 0:1000
+	type bigWig
+
+	track Cx3cr1KO_Rbp2_repl2
+	bigDataUrl http://microgliome.biochem.ubc.ca/BigWigs/Cx3cr1KO_Rpb2_M.bw
+	shortLabel Cx3cr1KO Rbp2 repl2
+	longLabel Cx3cr1KO Rbp2 repl2 Male
+	parent Cx3cr1KO_Rbp2_Gyoneva
+	color 140,34,240
+	viewLimits 0:1000
+	type bigWig
+
+#peak files
+ track Cx3cr1KO_Rbp2_peaks_Gyoneva
+    parent Gyoneva2019
+    bigDataUrl http://microgliome.biochem.ubc.ca/BigWigs/Homerpeaks_Rbp2_Cx3cr1KO.bb
+    shortLabel homer peaks Cx3cr1KO Rbp2 Gyoneva
+    longLabel homer peaks Cx3cr1KO Rbp2 Gyoneva
+    type bigBed
+    visibility squish
+    priority 30
+
+############################################################################
+#Input
+############################################################################
+
+track WT_Input_Gyoneva
+parent Gyoneva2019
+container multiWig
+shortLabel WT_Input_Gyoneva
+longLabel WT_Input_Gyoneva
+type bigWig
+visibility full
+aggregate transparentOverlay
+showSubtrackColorOnUi on
+
+	track WT_Input_Repl1
+	bigDataUrl http://microgliome.biochem.ubc.ca/BigWigs/WT_Input_F.bw
+	shortLabel WT Input repl1
+	longLabel WT Input repl1 Female
+	parent WT_Input_Gyoneva
+	color 198,34,71
+	viewLimits 0:1000
+	type bigWig
+
+	track WT_Input_Repl2
+	bigDataUrl http://microgliome.biochem.ubc.ca/BigWigs/WT_Input_M.bw
+	shortLabel WT Input repl2
+	longLabel WT Input repl2 Male
+	parent WT_Input_Gyoneva
+	color 140,34,240
+	viewLimits 0:1000
+	type bigWig
+
+
+track Cx3cr1KO_Input_Gyoneva
+parent Gyoneva2019
+container multiWig
+shortLabel Cx3cr1KO_Input_Gyoneva
+longLabel Cx3cr1KO_Input_Gyoneva
+type bigWig
+visibility full
+aggregate transparentOverlay
+showSubtrackColorOnUi on
+
+	track Cx3cr1KO_Input_repl1
+	bigDataUrl http://microgliome.biochem.ubc.ca/BigWigs/Cx3cr1KO_Input_F.bw
+	shortLabel Cx3cr1KO Input repl1
+	longLabel Cx3cr1KO Input repl1 Female
+	parent Cx3cr1KO_Input_Gyoneva
+	color 198,34,71
+	viewLimits 0:1000
+	type bigWig
+
+	track Cx3cr1KO_Input_repl2
+	bigDataUrl http://microgliome.biochem.ubc.ca/BigWigs/Cx3cr1KO_Input_M.bw
+	shortLabel Cx3cr1KO Input repl2
+	longLabel Cx3cr1KO Input repl2 Male
+	parent Cx3cr1KO_Input_Gyoneva
+	color 140,34,240
+	viewLimits 0:1000
+	type bigWig
+
+
+############################################################################
+#DE peak files
+############################################################################
+
+#peak files
+ track WTvsCx3cr1_DEpeaks_H3K27ac_Gyoneva
+    parent Gyoneva2019
+    bigDataUrl http://microgliome.biochem.ubc.ca/BigWigs/FDRfiltered.Gyoneva.H3K27ac.diffpeaks.bb
+    shortLabel DE H3K27ac peaks Gyoneva
+    longLabel FDR <0.05 DE peaks Cx3cr1KO vs WT H3K27ac Gyoneva
+    type bigBed
+    visibility squish
+    priority 30
+
+#peak files
+ track WTvsCx3cr1_DEpeaks_Rbp2_Gyoneva
+    parent Gyoneva2019
+    bigDataUrl http://microgliome.biochem.ubc.ca/BigWigs/FDRfiltered.Gyoneva.Rbp2.diffpeaks.bb
+    shortLabel DE Rbp2 peaks Gyoneva
+    longLabel FDR <0.05 DE peaks Cx3cr1KO vs WT Rbp2 Gyoneva
+    type bigBed
+    visibility squish
+    priority 30
+
+hub Microglia Epigenomics
+shortLabel Microglia Epigenomics
+longLabel Microglia Epigenomics
+useOneFile on
+email annie.ciernia@ubc.ca
+
+genome mm10
+
+
+#http://genome.ucsc.edu/cgi-bin/hgTracks?db=mm10&hubUrl=http://microgliome.biochem.ubc.ca/BigWigs/TrackHubmm10_MGEpi.txt
+
+
+############################################################################
+#Datta et al. 2018
+############################################################################
+track Datta2018
+superTrack on show
+shortLabel  Datta2018 on
+longLabel Datta et al. 2018
+html examplePage
+
+
+#wT MG Datta et al:
+#SRR6326796	H3K27ac
+#SRR6326798	H3K27ac
+
+track WT_H3K27ac_Datta
+parent Datta2018
+container multiWig
+shortLabel WT_H3K27ac_Datta
+longLabel WT_H3K27ac_Datta
+type bigWig
+visibility full
+aggregate transparentOverlay
+showSubtrackColorOnUi on
+
+	track WT_H3K27ac_repl1
+	bigDataUrl http://microgliome.biochem.ubc.ca/BigWigs/WT_H3K27ac_Repl1.bw
+	shortLabel WT H3K27ac repl1
+	longLabel WT H3K27ac repl1
+	parent WT_H3K27ac_Datta
+	color 198,34,71
+	viewLimits 0:1000
+	type bigWig
+
+	track WT_H3K27ac_repl2
+	bigDataUrl http://microgliome.biochem.ubc.ca/BigWigs/WT_H3K27ac_Repl2.bw
+	shortLabel WT H3K27ac repl2
+	longLabel WT H3K27ac repl2
+	parent WT_H3K27ac_Datta
+	color 140,34,240
+	viewLimits 0:1000
+	type bigWig
+
+
+#peak files
+ track WT_H3K27ac_peaks_Datta
+    parent Datta2018
+    bigDataUrl http://microgliome.biochem.ubc.ca/BigWigs/HomerpeaksGosselin_H3K27ac_WT.bb
+    shortLabel homer peaks WT H3K27ac Datta
+    longLabel homer peaks WT H3K27ac Datta
+    type bigBed
+    visibility squish
+    priority 30
+
+
+
+
+#make normalized bedgraphs:
+#H3K27ac
+#HDAC1/2KO MG:
+#TagDirectory/tag_SRR6326785
+#TagDirectory/tag_SRR6326800
+#TagDirectory/tag_SRR6326801
+
+track HDAC1&2KO_H3K27ac_Datta
+parent Datta2018
+container multiWig
+shortLabel HDAC1&2KO_H3K27ac_Datta
+longLabel HDAC1&2KO_H3K27ac_Datta
+type bigWig
+visibility full
+aggregate transparentOverlay
+showSubtrackColorOnUi on
+
+	track HDAC1&2KO_H3K27ac_repl1
+	bigDataUrl http://microgliome.biochem.ubc.ca/BigWigs/HDAC12KO_H3K27ac_Repl1.bw
+	shortLabel HDAC1&2KO H3K27ac repl1
+	longLabel HDAC1&2KO H3K27ac repl1
+	parent HDAC1&2KO_H3K27ac_Datta
+	color 198,34,71
+	viewLimits 0:1000
+	type bigWig
+
+	track HDAC1&2KO_H3K27ac_repl2
+	bigDataUrl http://microgliome.biochem.ubc.ca/BigWigs/HDAC12KO_H3K27ac_Repl2.bw
+	shortLabel HDAC1&2KO H3K27ac repl2
+	longLabel HDAC1&2KO H3K27ac repl2
+	parent HDAC1&2KO_H3K27ac_Datta
+	color 140,34,240
+	viewLimits 0:1000
+	type bigWig
+	
+	track HDAC1&2KO_H3K27ac_repl3
+	bigDataUrl http://microgliome.biochem.ubc.ca/BigWigs/HDAC12KO_H3K27ac_Repl3.bw
+	shortLabel HDAC1&2KO H3K27ac repl3
+	longLabel HDAC1&2KO H3K27ac repl3
+	parent HDAC1&2KO_H3K27ac_Datta
+	color 34,58,240
+	viewLimits 0:1000
+	type bigWig
+
+#peak files
+ track HDAC1&2KO_H3K27ac_peaks_Datta
+    parent Datta2018
+    bigDataUrl http://microgliome.biochem.ubc.ca/BigWigs/HomerpeaksGosselin_H3K27ac_HDAC1_2KO.bb
+    shortLabel homer peaks HDAC1&2KO H3K27ac Datta
+    longLabel homer peaks HDAC1&2KO H3K27ac Datta
+    type bigBed
+    visibility squish
+    priority 30
+
+############################################################################
+#H3K9ac
+############################################################################
+#wT MG:
+
+
+track WT_H3K9ac_Datta
+parent Datta2018
+container multiWig
+shortLabel WT_H3K9ac_Datta
+longLabel WT_H3K9ac_Datta
+type bigWig
+visibility full
+aggregate transparentOverlay
+showSubtrackColorOnUi on
+
+	track WT_H3K9ac_repl1
+	bigDataUrl http://microgliome.biochem.ubc.ca/BigWigs/WT_H3K9ac_Repl1.bw
+	shortLabel WT H3K9ac repl1
+	longLabel WT H3K9ac repl1
+	parent WT_H3K9ac_Datta
+	color 198,34,71
+	viewLimits 0:1000
+	type bigWig
+
+	track WT_H3K9ac_repl2
+	bigDataUrl http://microgliome.biochem.ubc.ca/BigWigs/WT_H3K9ac_Repl2.bw
+	shortLabel WT H3K9ac repl2
+	longLabel WT H3K9ac repl2
+	parent WT_H3K9ac_Datta
+	color 140,34,240
+	viewLimits 0:1000
+	type bigWig
+
+
+	track WT_H3K9ac_repl3
+	bigDataUrl http://microgliome.biochem.ubc.ca/BigWigs/WT_H3K9ac_Repl3.bw
+	shortLabel WT H3K9ac repl3
+	longLabel WT H3K9ac repl3
+	parent WT_H3K9ac_Datta
+	color 34,58,240
+	viewLimits 0:1000
+	type bigWig
+
+
+#peak files
+ track WT_H3K9ac_peaks_Datta
+    parent Datta2018
+    bigDataUrl http://microgliome.biochem.ubc.ca/BigWigs/HomerpeaksGosselin_H3K9ac_WT.bb
+    shortLabel homer peaks WT H3K9ac Datta
+    longLabel homer peaks WT H3K9ac Datta
+    type bigBed
+    visibility squish
+    priority 30
+
+
+#HDAC1/2KO MG:
+
+track HDAC1&2KO_H3K9ac_Datta
+parent Datta2018
+container multiWig
+shortLabel HDAC1&2KO_H3K9ac_Datta
+longLabel HDAC1&2KO_H3K9ac_Datta
+type bigWig
+visibility full
+aggregate transparentOverlay
+showSubtrackColorOnUi on
+
+	track HDAC1&2KO_H3K9ac_repl1
+	bigDataUrl http://microgliome.biochem.ubc.ca/BigWigs/HDAC12KO_H3K9ac_Repl1.bw
+	shortLabel HDAC1&2KO H3K9ac repl1
+	longLabel HDAC1&2KO H3K9ac repl1
+	parent HDAC1&2KO_H3K9ac_Datta
+	color 198,34,71
+	viewLimits 0:1000
+	type bigWig
+
+	track HDAC1&2KO_H3K9ac_repl2
+	bigDataUrl http://microgliome.biochem.ubc.ca/BigWigs/HDAC12KO_H3K9ac_Repl2.bw
+	shortLabel HDAC1&2KO H3K9ac repl2
+	longLabel HDAC1&2KO H3K9ac repl2
+	parent HDAC1&2KO_H3K9ac_Datta
+	color 140,34,240
+	viewLimits 0:1000
+	type bigWig
+	
+#peak files
+ track HDAC1&2KO_H3K9ac_peaks_Datta
+    parent Datta2018
+    bigDataUrl http://microgliome.biochem.ubc.ca/BigWigs/HomerpeaksGosselin_H3K9ac_HDAC1_2KO.bb
+    shortLabel homer peaks HDAC1&2KO H3K9ac Datta
+    longLabel homer peaks HDAC1&2KO H3K9ac Datta
+    type bigBed
+    visibility squish
+    priority 30
+
+############################################################################
+#Input WT
+############################################################################
+track WT_Input_Datta
+parent Datta2018
+container multiWig
+shortLabel WT_Input_Datta
+longLabel WT_Input_Datta
+type bigWig
+visibility full
+aggregate transparentOverlay
+showSubtrackColorOnUi on
+
+	track WT_Input_repl1
+	bigDataUrl http://microgliome.biochem.ubc.ca/BigWigs/WT_Input_Repl1.bw
+	shortLabel WT Input repl1
+	longLabel WT Input repl1
+	parent WT_Input_Datta
+	color 198,34,71
+	viewLimits 0:1000
+	type bigWig
+
+	track WT_Input_repl2
+	bigDataUrl http://microgliome.biochem.ubc.ca/BigWigs/WT_Input_Repl2.bw
+	shortLabel WT Input repl2
+	longLabel WT Input repl2
+	parent WT_Input_Datta
+	color 140,34,240
+	viewLimits 0:1000
+	type bigWig
+
+
+	track WT_Input_repl3
+	bigDataUrl http://microgliome.biochem.ubc.ca/BigWigs/WT_Input_Repl3.bw
+	shortLabel WT Input repl3
+	longLabel WT Input repl3
+	parent WT_Input_Datta
+	color 34,58,240
+	viewLimits 0:1000
+	type bigWig
+
+	track WT_Input_repl4
+	bigDataUrl http://microgliome.biochem.ubc.ca/BigWigs/WT_Input_Repl4.bw
+	shortLabel WT Input repl4
+	longLabel WT Input repl4
+	parent WT_Input_Datta
+	color 34,100,240
+	viewLimits 0:1000
+	type bigWig
+
+
+	track WT_Input_repl5
+	bigDataUrl http://microgliome.biochem.ubc.ca/BigWigs/WT_Input_Repl5.bw
+	shortLabel WT Input repl5
+	longLabel WT Input repl5
+	parent WT_Input_Datta
+	color 134,58,20
+	viewLimits 0:1000
+	type bigWig
+
+
+############################################################################
+#Input HDAC12KO
+############################################################################
+track HDAC12KO_Input_Datta
+parent Datta2018
+container multiWig
+shortLabel HDAC12KO_Input_Datta
+longLabel HDAC12KO_Input_Datta
+type bigWig
+visibility full
+aggregate transparentOverlay
+showSubtrackColorOnUi on
+
+	track HDAC12KO_Input_repl1
+	bigDataUrl http://microgliome.biochem.ubc.ca/BigWigs/HDAC12KO_Input_Repl1.bw
+	shortLabel HDAC12KO Input repl1
+	longLabel HDAC12KO Input repl1
+	parent HDAC12KO_Input_Datta
+	color 198,34,71
+	viewLimits 0:1000
+	type bigWig
+
+	track HDAC12KO_Input_repl2
+	bigDataUrl http://microgliome.biochem.ubc.ca/BigWigs/HDAC12KO_Input_Repl2.bw
+	shortLabel HDAC12KO Input repl2
+	longLabel HDAC12KO Input repl2
+	parent HDAC12KO_Input_Datta
+	color 140,34,240
+	viewLimits 0:1000
+	type bigWig
+
+
+hub Microglia Epigenomics
+shortLabel Microglia Epigenomics
+longLabel Microglia Epigenomics
+useOneFile on
+email annie.ciernia@ubc.ca
+
+genome mm10
+
+
+#http://genome.ucsc.edu/cgi-bin/hgTracks?db=mm10&hubUrl=http://microgliome.biochem.ubc.ca/BigWigs/TrackHubmm10_MGEpi.txt
+
+
+############################################################################
+#Ayata et al 2018
+############################################################################
+track Ayata2018
+superTrack on show
+shortLabel  Ayata2018 on
+longLabel Ayata et al 2018
+html examplePage
+
+
+
+############################################################################
+#H3K27me3
+############################################################################
+
+track WT_H3K27me3_Ayata
+parent Ayata2018
+container multiWig
+shortLabel WT_H3K27me3_Ayata
+longLabel WT_H3K27me3_Ayata
+type bigWig
+visibility full
+aggregate transparentOverlay
+showSubtrackColorOnUi on
+
+	track Cerebellum_H3K27me3
+	bigDataUrl http://microgliome.biochem.ubc.ca/BigWigs/cbMG_H3K27me3.bw
+	shortLabel Cerebellum H3K27me3
+	longLabel Cerebellum H3K27me3
+	parent WT_H3K27me3_Ayata
+	color 198,34,71
+	viewLimits 0:1000
+	type bigWig
+
+	track Cortex_H3K27me3
+	bigDataUrl http://microgliome.biochem.ubc.ca/BigWigs/cxMg_H3K27me3.bw
+	shortLabel Cortex_H3K27me3
+	longLabel Cortex_H3K27me3
+	parent WT_H3K27me3_Ayata
+	color 140,34,240
+	viewLimits 0:1000
+	type bigWig
+
+	track Striatum_H3K27me3
+	bigDataUrl http://microgliome.biochem.ubc.ca/BigWigs/StrMG_H3K27me3.bw
+	longLabel Striatum_H3K27me3
+	parent WT_H3K27me3_Ayata
+	color 34,58,240
+	viewLimits 0:1000
+	type bigWig
+
+
+#peak files
+ track H3K27me3_peaks_CB_Ayata
+    parent Ayata2018
+    bigDataUrl http://microgliome.biochem.ubc.ca/BigWigs/Homerpeaks_cbMG_H3K27me3.bb
+    shortLabel homer peaks Cerebellum H3K27me3 Ayata
+    longLabel homer peaks Cerebellum H3K27me3 Ayata
+    type bigBed
+    visibility squish
+    priority 30
+
+
+ track H3K27me3_peaks_CTX_Ayata
+    parent Ayata2018
+    bigDataUrl http://microgliome.biochem.ubc.ca/BigWigs/Homerpeaks_cxMg_H3K27me3.bb
+    shortLabel homer peaks Cortex H3K27me3 Ayata
+    longLabel homer peaks Cortex H3K27me3 Ayata
+    type bigBed
+    visibility squish
+    priority 30
+
+ track H3K27me3_peaks_STR_Ayata
+    parent Ayata2018
+    bigDataUrl http://microgliome.biochem.ubc.ca/BigWigs/Homerpeaks_StrMG_H3K27me3.bb
+    shortLabel homer peaks Striatum H3K27me3 Ayata
+    longLabel homer peaks Striatum H3K27me3 Ayata
+    type bigBed
+    visibility squish
+    priority 30
+    
+############################################################################
+#Input
+############################################################################
+
+track WT_Input_Ayata
+parent Ayata2018
+container multiWig
+shortLabel WT_Input_Ayata
+longLabel WT_Input_Ayata
+type bigWig
+visibility full
+aggregate transparentOverlay
+showSubtrackColorOnUi on
+
+	track Cerebellum_Input
+	bigDataUrl http://microgliome.biochem.ubc.ca/BigWigs/cbMG_Input.bw
+	shortLabel Cerebellum Input
+	longLabel Cerebellum Input
+	parent WT_Input_Ayata
+	color 198,34,71
+	viewLimits 0:1000
+	type bigWig
+
+	track Cortex_Input
+	bigDataUrl http://microgliome.biochem.ubc.ca/BigWigs/cxMg_Input.bw
+	shortLabel Cortex_Input
+	longLabel Cortex_Input
+	parent WT_Input_Ayata
+	color 140,34,240
+	viewLimits 0:1000
+	type bigWig
+
+	track Striatum_Input
+	bigDataUrl http://microgliome.biochem.ubc.ca/BigWigs/StrMG_Input.bw
+	longLabel Striatum_Input
+	parent WT_Input_Ayata
+	color 34,58,240
+	viewLimits 0:1000
+	type bigWig
+
+
+
+hub Microglia Epigenomics
+shortLabel Microglia Epigenomics
+longLabel Microglia Epigenomics
+useOneFile on
+email annie.ciernia@ubc.ca
+
+genome mm10
+
+
+#http://genome.ucsc.edu/cgi-bin/hgTracks?db=mm10&hubUrl=http://microgliome.biochem.ubc.ca/BigWigs/TrackHubmm10_MGEpi.txt
+
+
+############################################################################
+#Lavin et al 2014
+############################################################################
+track Lavin2014
+superTrack on show
+shortLabel  Lavin2014 on
+longLabel Lavin et al 2014
+html examplePage
+
+
+
+############################################################################
+#H3K27ac
+############################################################################
+
+track WT_H3K27ac_Lavin
+parent Lavin2014
+container multiWig
+shortLabel WT_H3K27ac_Lavin
+longLabel WT_H3K27ac_Lavin
+type bigWig
+visibility full
+aggregate transparentOverlay
+showSubtrackColorOnUi on
+
+	track WT_H3K27ac_1
+	bigDataUrl http://microgliome.biochem.ubc.ca/BigWigs/H3K27ac_1.bw
+	shortLabel WT H3K27ac 1
+	longLabel WT H3K27ac 1
+	parent WT_H3K27ac_Lavin
+	color 198,34,71
+	viewLimits 0:1000
+	type bigWig
+
+	track WT_H3K27ac_2
+	bigDataUrl http://microgliome.biochem.ubc.ca/BigWigs/H3K27ac_2.bw
+	shortLabel WT H3K27ac 2
+	longLabel WT H3K27ac 2
+	parent WT_H3K27ac_Lavin
+	color 140,34,240
+	viewLimits 0:1000
+	type bigWig
+
+	track WT_H3K27ac_3
+	bigDataUrl http://microgliome.biochem.ubc.ca/BigWigs/H3K27ac_3.bw
+	shortLabel WT H3K27ac 3
+	longLabel WT H3K27ac 3
+	parent WT_H3K27ac_Lavin
+	color 34,58,240
+	viewLimits 0:1000
+	type bigWig
+
+
+	track WT_H3K27ac_4
+	bigDataUrl http://microgliome.biochem.ubc.ca/BigWigs/H3K27ac_4.bw
+	shortLabel WT H3K27ac 4
+	longLabel WT H3K27ac 4
+	parent WT_H3K27ac_Lavin
+	color 250,0,0
+	viewLimits 0:1000
+	type bigWig
+
+
+	track WT_H3K27ac_5
+	bigDataUrl http://microgliome.biochem.ubc.ca/BigWigs/H3K27ac_5.bw
+	shortLabel WT H3K27ac 5
+	longLabel WT H3K27ac 5
+	parent WT_H3K27ac_Lavin
+	color 0,250,0
+	viewLimits 0:1000
+	type bigWig
+
+
+	track WT_H3K27ac_6
+	bigDataUrl http://microgliome.biochem.ubc.ca/BigWigs/H3K27ac_6.bw
+	shortLabel WT H3K27ac 6
+	longLabel WT H3K27ac 6
+	parent WT_H3K27ac_Lavin
+	color 0,0,250
+	viewLimits 0:1000
+	type bigWig
+
+
+
+#peak files
+ track H3K27ac_peaks_Lavin
+    parent Lavin2014
+    bigDataUrl http://microgliome.biochem.ubc.ca/BigWigs/Homerpeaks_H3K27ac.bb
+    shortLabel homer peaks H3K27ac Lavin
+    longLabel homer peaks H3K27ac Lavin
+    type bigBed
+    visibility squish
+    priority 30
+
+
+
+
+############################################################################
+#H3K4me1
+############################################################################
+
+track WT_H3K4me1_Lavin
+parent Lavin2014
+container multiWig
+shortLabel WT_H3K4me1_Lavin
+longLabel WT_H3K4me1_Lavin
+type bigWig
+visibility full
+aggregate transparentOverlay
+showSubtrackColorOnUi on
+
+	track WT_H3K4me1_1
+	bigDataUrl http://microgliome.biochem.ubc.ca/BigWigs/H3K4me1_1.bw
+	shortLabel WT H3K4me1 1
+	longLabel WT H3K4me1 1
+	parent WT_H3K4me1_Lavin
+	color 198,34,71
+	viewLimits 0:1000
+	type bigWig
+
+	track WT_H3K4me1_2
+	bigDataUrl http://microgliome.biochem.ubc.ca/BigWigs/H3K4me1_2.bw
+	shortLabel WT H3K4me1 2
+	longLabel WT H3K4me1 2
+	parent WT_H3K4me1_Lavin
+	color 140,34,240
+	viewLimits 0:1000
+	type bigWig
+
+	track WT_H3K4me1_3
+	bigDataUrl http://microgliome.biochem.ubc.ca/BigWigs/H3K4me1_3.bw
+	shortLabel WT H3K4me1 3
+	longLabel WT H3K4me1 3
+	parent WT_H3K4me1_Lavin
+	color 34,58,240
+	viewLimits 0:1000
+	type bigWig
+
+
+	track WT_H3K4me1_4
+	bigDataUrl http://microgliome.biochem.ubc.ca/BigWigs/H3K4me1_4.bw
+	shortLabel WT H3K4me1 4
+	longLabel WT H3K4me1 4
+	parent WT_H3K4me1_Lavin
+	color 250,0,0
+	viewLimits 0:1000
+	type bigWig
+
+
+	track WT_H3K4me1_5
+	bigDataUrl http://microgliome.biochem.ubc.ca/BigWigs/H3K4me1_5.bw
+	shortLabel WT H3K4me1 5
+	longLabel WT H3K4me1 5
+	parent WT_H3K4me1_Lavin
+	color 0,250,0
+	viewLimits 0:1000
+	type bigWig
+
+
+
+#peak files
+ track H3K4me1_peaks_Lavin
+    parent Lavin2014
+    bigDataUrl http://microgliome.biochem.ubc.ca/BigWigs/Homerpeaks_H3K4me1.bb
+    shortLabel homer peaks H3K4me1 Lavin
+    longLabel homer peaks H3K4me1 Lavin
+    type bigBed
+    visibility squish
+    priority 30
+
+
+
+############################################################################
+#H3K4me2
+############################################################################
+
+track WT_H3K4me2_Lavin
+parent Lavin2014
+container multiWig
+shortLabel WT_H3K4me2_Lavin
+longLabel WT_H3K4me2_Lavin
+type bigWig
+visibility full
+aggregate transparentOverlay
+showSubtrackColorOnUi on
+
+	track WT_H3K4me2_1
+	bigDataUrl http://microgliome.biochem.ubc.ca/BigWigs/H3K4me2_1.bw
+	shortLabel WT H3K4me2 1
+	longLabel WT H3K4me2 1
+	parent WT_H3K4me2_Lavin
+	color 198,34,71
+	viewLimits 0:1000
+	type bigWig
+
+	track WT_H3K4me2_2
+	bigDataUrl http://microgliome.biochem.ubc.ca/BigWigs/H3K4me2_2.bw
+	shortLabel WT H3K4me2 2
+	longLabel WT H3K4me2 2
+	parent WT_H3K4me2_Lavin
+	color 140,34,240
+	viewLimits 0:1000
+	type bigWig
+
+
+#peak files
+ track H3K4me2_peaks_Lavin
+    parent Lavin2014
+    bigDataUrl http://microgliome.biochem.ubc.ca/BigWigs/Homerpeaks_H3K4me2.bb
+    shortLabel homer peaks H3K4me2 Lavin
+    longLabel homer peaks H3K4me2 Lavin
+    type bigBed
+    visibility squish
+    priority 30
+
+
+
+###########################################################################
+#Input
+############################################################################
+ track Input_Lavin
+    parent Lavin2014
+    bigDataUrl http://microgliome.biochem.ubc.ca/BigWigs/Pooltag_Input.bw
+    shortLabel Input Lavin
+    longLabel Input Lavin
+    type bigWig
+    visibility squish
+
+
+
+############################################################################
+#Wendeln et al 2018
+############################################################################
+track Wendeln2018
+superTrack on show
+shortLabel  Wendeln2018 on
+longLabel Wendeln et al 2018
+html examplePage
+
+
+
+############################################################################
+#WT H3K27ac PBS
+############################################################################
+
+track H3K27ac_WT_PBS
+parent Wendeln2018
+container multiWig
+shortLabel H3K27ac_WT_PBS
+longLabel H3K27ac_WT_PBS
+type bigWig
+visibility full
+aggregate transparentOverlay
+showSubtrackColorOnUi on
+
+	track H3K27ac_WT_PBS_1
+	bigDataUrl http://microgliome.biochem.ubc.ca/BigWigs/WT_H3K27ac_PBSrepl1.bw
+	shortLabel H3K27ac WT PBS 1
+	longLabel H3K27ac WT PBS 1
+	parent H3K27ac_WT_PBS
+	color 198,34,71
+	viewLimits 0:1000
+	type bigWig
+
+	track H3K27ac_WT_PBS_2
+	bigDataUrl http://microgliome.biochem.ubc.ca/BigWigs/WT_H3K27ac_PBSrepl2.bw
+	shortLabel H3K27ac WT PBS 2
+	longLabel H3K27ac WT PBS 2
+	parent H3K27ac_WT_PBS
+	color 140,34,240
+	viewLimits 0:1000
+	type bigWig
+
+
+#peak files
+ track H3K27ac_WT_PBS_peaks
+    parent Wendeln2018
+    bigDataUrl http://microgliome.biochem.ubc.ca/BigWigs/Homerpeaks_H3K27ac_WT_PBS.bb
+    shortLabel homer peaks WT H3K27ac PBS Wendeln
+    longLabel homer peaks WT H3K27ac PBS Wendeln
+    type bigBed
+    visibility squish
+    priority 30
+
+
+############################################################################
+#WT H3K27ac 1xLPS
+############################################################################
+
+track H3K27ac_WT_1xLPS
+parent Wendeln2018
+container multiWig
+shortLabel H3K27ac_WT_1xLPS
+longLabel H3K27ac_WT_1xLPS
+type bigWig
+visibility full
+aggregate transparentOverlay
+showSubtrackColorOnUi on
+
+	track H3K27ac_WT_1xLPS_1
+	bigDataUrl http://microgliome.biochem.ubc.ca/BigWigs/WT_H3K27ac_1xLPSrepl1.bw
+	shortLabel H3K27ac WT 1xLPS 1
+	longLabel H3K27ac WT 1xLPS 1
+	parent H3K27ac_WT_1xLPS
+	color 198,34,71
+	viewLimits 0:1000
+	type bigWig
+
+	track H3K27ac_WT_1xLPS_2
+	bigDataUrl http://microgliome.biochem.ubc.ca/BigWigs/WT_H3K27ac_1xLPSrepl2.bw
+	shortLabel H3K27ac WT 1xLPS 2
+	longLabel H3K27ac WT 1xLPS 2
+	parent H3K27ac_WT_1xLPS
+	color 140,34,240
+	viewLimits 0:1000
+	type bigWig
+
+#peak files
+ track H3K27ac_WT_1xLPS_peaks
+    parent Wendeln2018
+    bigDataUrl http://microgliome.biochem.ubc.ca/BigWigs/Homerpeaks_H3K27ac_WT_1xLPS.bb
+    shortLabel homer peaks WT H3K27ac 1xLPS Wendeln
+    longLabel homer peaks WT H3K27ac 1xLPS Wendeln
+    type bigBed
+    visibility squish
+    priority 30
+
+############################################################################
+#WT H3K27ac 4xLPS
+############################################################################
+
+track H3K27ac_WT_4xLPS
+parent Wendeln2018
+container multiWig
+shortLabel H3K27ac_WT_4xLPS
+longLabel H3K27ac_WT_4xLPS
+type bigWig
+visibility full
+aggregate transparentOverlay
+showSubtrackColorOnUi on
+
+	track H3K27ac_WT_4xLPS_1
+	bigDataUrl http://microgliome.biochem.ubc.ca/BigWigs/WT_H3K27ac_4xLPSrepl1.bw
+	shortLabel H3K27ac WT 4xLPS 1
+	longLabel H3K27ac WT 4xLPS 1
+	parent H3K27ac_WT_4xLPS
+	color 198,34,71
+	viewLimits 0:1000
+	type bigWig
+
+	track H3K27ac_WT_4xLPS_2
+	bigDataUrl http://microgliome.biochem.ubc.ca/BigWigs/WT_H3K27ac_4xLPSrepl2.bw
+	shortLabel H3K27ac WT 4xLPS 2
+	longLabel H3K27ac WT 4xLPS 2
+	parent H3K27ac_WT_4xLPS
+	color 140,34,240
+	viewLimits 0:1000
+	type bigWig
+
+
+#peak files
+ track H3K27ac_WT_4xLPS_peaks
+    parent Wendeln2018
+    bigDataUrl http://microgliome.biochem.ubc.ca/BigWigs/Homerpeaks_H3K27ac_WT_4xLPS.bb
+    shortLabel homer peaks WT H3K27ac 4xLPS Wendeln
+    longLabel homer peaks WT H3K27ac 4xLPS Wendeln
+    type bigBed
+    visibility squish
+    priority 30
+    
+
+############################################################################
+#WT H3K4me1 PBS
+############################################################################
+
+track H3K4me1_WT_PBS
+parent Wendeln2018
+container multiWig
+shortLabel H3K4me1_WT_PBS
+longLabel H3K4me1_WT_PBS
+type bigWig
+visibility full
+aggregate transparentOverlay
+showSubtrackColorOnUi on
+
+	track H3K4me1_WT_PBS_1
+	bigDataUrl http://microgliome.biochem.ubc.ca/BigWigs/WT_H3K4me1_PBSrepl1.bw
+	shortLabel H3K4me1 WT PBS 1
+	longLabel H3K4me1 WT PBS 1
+	parent H3K4me1_WT_PBS
+	color 198,34,71
+	viewLimits 0:1000
+	type bigWig
+
+	track H3K4me1_WT_PBS_2
+	bigDataUrl http://microgliome.biochem.ubc.ca/BigWigs/WT_H3K4me1_PBSrepl2.bw
+	shortLabel H3K4me1 WT PBS 2
+	longLabel H3K4me1 WT PBS 2
+	parent H3K4me1_WT_PBS
+	color 140,34,240
+	viewLimits 0:1000
+	type bigWig
+
+
+#peak files
+ track H3K4me1_WT_PBS_peaks
+    parent Wendeln2018
+    bigDataUrl http://microgliome.biochem.ubc.ca/BigWigs/Homerpeaks_H3K4me1_WT_PBS.bb
+    shortLabel homer peaks WT H3K4me1 PBS Wendeln
+    longLabel homer peaks WT H3K4me1 PBS Wendeln
+    type bigBed
+    visibility squish
+    priority 30
+
+
+############################################################################
+#WT H3K4me1 1xLPS
+############################################################################
+
+track H3K4me1_WT_1xLPS
+parent Wendeln2018
+container multiWig
+shortLabel H3K4me1_WT_1xLPS
+longLabel H3K4me1_WT_1xLPS
+type bigWig
+visibility full
+aggregate transparentOverlay
+showSubtrackColorOnUi on
+
+	track H3K4me1_WT_1xLPS_1
+	bigDataUrl http://microgliome.biochem.ubc.ca/BigWigs/WT_H3K4me1_1xLPSrepl1.bw
+	shortLabel H3K4me1 WT 1xLPS 1
+	longLabel H3K4me1 WT 1xLPS 1
+	parent H3K4me1_WT_1xLPS
+	color 198,34,71
+	viewLimits 0:1000
+	type bigWig
+
+	track H3K4me1_WT_1xLPS_2
+	bigDataUrl http://microgliome.biochem.ubc.ca/BigWigs/WT_H3K4me1_1xLPSrepl2.bw
+	shortLabel H3K4me1 WT 1xLPS 2
+	longLabel H3K4me1 WT 1xLPS 2
+	parent H3K4me1_WT_1xLPS
+	color 140,34,240
+	viewLimits 0:1000
+	type bigWig
+
+#peak files
+ track H3K4me1_WT_1xLPS_peaks
+    parent Wendeln2018
+    bigDataUrl http://microgliome.biochem.ubc.ca/BigWigs/Homerpeaks_H3K4me1_WT_1xLPS.bb
+    shortLabel homer peaks WT H3K4me1 1xLPS Wendeln
+    longLabel homer peaks WT H3K4me1 1xLPS Wendeln
+    type bigBed
+    visibility squish
+    priority 30
+
+############################################################################
+#WT H3K4me1 4xLPS
+############################################################################
+
+track H3K4me1_WT_4xLPS
+parent Wendeln2018
+container multiWig
+shortLabel H3K4me1_WT_4xLPS
+longLabel H3K4me1_WT_4xLPS
+type bigWig
+visibility full
+aggregate transparentOverlay
+showSubtrackColorOnUi on
+
+	track H3K4me1_WT_4xLPS_1
+	bigDataUrl http://microgliome.biochem.ubc.ca/BigWigs/WT_H3K4me1_4xLPSrepl1.bw
+	shortLabel H3K4me1 WT 4xLPS 1
+	longLabel H3K4me1 WT 4xLPS 1
+	parent H3K4me1_WT_4xLPS
+	color 198,34,71
+	viewLimits 0:1000
+	type bigWig
+
+	track H3K4me1_WT_4xLPS_2
+	bigDataUrl http://microgliome.biochem.ubc.ca/BigWigs/WT_H3K4me1_4xLPSrepl2.bw
+	shortLabel H3K4me1 WT 4xLPS 2
+	longLabel H3K4me1 WT 4xLPS 2
+	parent H3K4me1_WT_4xLPS
+	color 140,34,240
+	viewLimits 0:1000
+	type bigWig
+
+
+#peak files
+ track H3K4me1_WT_4xLPS_peaks
+    parent Wendeln2018
+    bigDataUrl http://microgliome.biochem.ubc.ca/BigWigs/Homerpeaks_H3K4me1_WT_4xLPS.bb
+    shortLabel homer peaks WT H3K4me1 4xLPS Wendeln
+    longLabel homer peaks WT H3K4me1 4xLPS Wendeln
+    type bigBed
+    visibility squish
+    priority 30
+
+############################################################################
+#WT Input
+############################################################################
+
+track Input_WT
+parent Wendeln2018
+container multiWig
+shortLabel Input_WT
+longLabel Input_WT
+type bigWig
+visibility full
+aggregate transparentOverlay
+showSubtrackColorOnUi on
+
+	track Input_WT_1
+	bigDataUrl http://microgliome.biochem.ubc.ca/BigWigs/WT_input_mixedrepl1.bw
+	shortLabel Input WT 1
+	longLabel Input WT 1
+	parent Input_WT
+	color 198,34,71
+	viewLimits 0:1000
+	type bigWig
+
+	track Input_WT_2
+	bigDataUrl http://microgliome.biochem.ubc.ca/BigWigs/WT_input_mixedrepl2.bw
+	shortLabel Input WT 2
+	longLabel Input WT 2
+	parent Input_WT
+	color 140,34,240
+	viewLimits 0:1000
+	type bigWig
+
+
+############################################################################
+#APP23 H3K27ac PBS
+############################################################################
+
+track H3K27ac_APP23_PBS
+parent Wendeln2018
+container multiWig
+shortLabel H3K27ac_APP23_PBS
+longLabel H3K27ac_APP23_PBS
+type bigWig
+visibility full
+aggregate transparentOverlay
+showSubtrackColorOnUi on
+
+	track H3K27ac_APP23_PBS_1
+	bigDataUrl http://microgliome.biochem.ubc.ca/BigWigs/APP23_H3K27ac_PBSrepl1.bw
+	shortLabel H3K27ac APP23 PBS 1
+	longLabel H3K27ac APP23 PBS 1
+	parent H3K27ac_APP23_PBS
+	color 198,34,71
+	viewLimits 0:1000
+	type bigWig
+
+	track H3K27ac_APP23_PBS_2
+	bigDataUrl http://microgliome.biochem.ubc.ca/BigWigs/APP23_H3K27ac_PBSrepl2.bw
+	shortLabel H3K27ac APP23 PBS 2
+	longLabel H3K27ac APP23 PBS 2
+	parent H3K27ac_APP23_PBS
+	color 140,34,240
+	viewLimits 0:1000
+	type bigWig
+
+
+#peak files
+ track H3K27ac_APP23_PBS_peaks
+    parent Wendeln2018
+    bigDataUrl http://microgliome.biochem.ubc.ca/BigWigs/Homerpeaks_H3K27ac_APP23_PBS.bb
+    shortLabel homer peaks APP23 H3K27ac PBS Wendeln
+    longLabel homer peaks APP23 H3K27ac PBS Wendeln
+    type bigBed
+    visibility squish
+    priority 30
+
+
+############################################################################
+#APP23 H3K27ac 1xLPS
+############################################################################
+
+track H3K27ac_APP23_1xLPS
+parent Wendeln2018
+container multiWig
+shortLabel H3K27ac_APP23_1xLPS
+longLabel H3K27ac_APP23_1xLPS
+type bigWig
+visibility full
+aggregate transparentOverlay
+showSubtrackColorOnUi on
+
+	track H3K27ac_APP23_1xLPS_1
+	bigDataUrl http://microgliome.biochem.ubc.ca/BigWigs/APP23_H3K27ac_1xLPSrepl1.bw
+	shortLabel H3K27ac APP23 1xLPS 1
+	longLabel H3K27ac APP23 1xLPS 1
+	parent H3K27ac_APP23_1xLPS
+	color 198,34,71
+	viewLimits 0:1000
+	type bigWig
+
+	track H3K27ac_APP23_1xLPS_2
+	bigDataUrl http://microgliome.biochem.ubc.ca/BigWigs/APP23_H3K27ac_1xLPSrepl2.bw
+	shortLabel H3K27ac APP23 1xLPS 2
+	longLabel H3K27ac APP23 1xLPS 2
+	parent H3K27ac_APP23_1xLPS
+	color 140,34,240
+	viewLimits 0:1000
+	type bigWig
+
+#peak files
+ track H3K27ac_APP23_1xLPS_peaks
+    parent Wendeln2018
+    bigDataUrl http://microgliome.biochem.ubc.ca/BigWigs/Homerpeaks_H3K27ac_APP23_1xLPS.bb
+    shortLabel homer peaks APP23 H3K27ac 1xLPS Wendeln
+    longLabel homer peaks APP23 H3K27ac 1xLPS Wendeln
+    type bigBed
+    visibility squish
+    priority 30
+
+############################################################################
+#APP23 H3K27ac 4xLPS
+############################################################################
+
+track H3K27ac_APP23_4xLPS
+parent Wendeln2018
+container multiWig
+shortLabel H3K27ac_APP23_4xLPS
+longLabel H3K27ac_APP23_4xLPS
+type bigWig
+visibility full
+aggregate transparentOverlay
+showSubtrackColorOnUi on
+
+	track H3K27ac_APP23_4xLPS_1
+	bigDataUrl http://microgliome.biochem.ubc.ca/BigWigs/APP23_H3K27ac_4xLPSrepl1.bw
+	shortLabel H3K27ac APP23 4xLPS 1
+	longLabel H3K27ac APP23 4xLPS 1
+	parent H3K27ac_APP23_4xLPS
+	color 198,34,71
+	viewLimits 0:1000
+	type bigWig
+
+	track H3K27ac_APP23_4xLPS_2
+	bigDataUrl http://microgliome.biochem.ubc.ca/BigWigs/APP23_H3K27ac_4xLPSrepl2.bw
+	shortLabel H3K27ac APP23 4xLPS 2
+	longLabel H3K27ac APP23 4xLPS 2
+	parent H3K27ac_APP23_4xLPS
+	color 140,34,240
+	viewLimits 0:1000
+	type bigWig
+
+
+#peak files
+ track H3K27ac_APP23_4xLPS_peaks
+    parent Wendeln2018
+    bigDataUrl http://microgliome.biochem.ubc.ca/BigWigs/Homerpeaks_H3K27ac_APP23_4xLPS.bb
+    shortLabel homer peaks APP23 H3K27ac 4xLPS Wendeln
+    longLabel homer peaks APP23 H3K27ac 4xLPS Wendeln
+    type bigBed
+    visibility squish
+    priority 30
+    
+
+############################################################################
+#APP23 H3K4me1 PBS
+############################################################################
+
+track H3K4me1_APP23_PBS
+parent Wendeln2018
+container multiWig
+shortLabel H3K4me1_APP23_PBS
+longLabel H3K4me1_APP23_PBS
+type bigWig
+visibility full
+aggregate transparentOverlay
+showSubtrackColorOnUi on
+
+	track H3K4me1_APP23_PBS_1
+	bigDataUrl http://microgliome.biochem.ubc.ca/BigWigs/APP23_H3K4me1_PBSrepl1.bw
+	shortLabel H3K4me1 APP23 PBS 1
+	longLabel H3K4me1 APP23 PBS 1
+	parent H3K4me1_APP23_PBS
+	color 198,34,71
+	viewLimits 0:1000
+	type bigWig
+
+	track H3K4me1_APP23_PBS_2
+	bigDataUrl http://microgliome.biochem.ubc.ca/BigWigs/APP23_H3K4me1_PBSrepl2.bw
+	shortLabel H3K4me1 APP23 PBS 2
+	longLabel H3K4me1 APP23 PBS 2
+	parent H3K4me1_APP23_PBS
+	color 140,34,240
+	viewLimits 0:1000
+	type bigWig
+
+
+#peak files
+ track H3K4me1_APP23_PBS_peaks
+    parent Wendeln2018
+    bigDataUrl http://microgliome.biochem.ubc.ca/BigWigs/Homerpeaks_H3K4me1_APP23_PBS.bb
+    shortLabel homer peaks APP23 H3K4me1 PBS Wendeln
+    longLabel homer peaks APP23 H3K4me1 PBS Wendeln
+    type bigBed
+    visibility squish
+    priority 30
+
+
+############################################################################
+#APP23 H3K4me1 1xLPS
+############################################################################
+
+track H3K4me1_APP23_1xLPS
+parent Wendeln2018
+container multiWig
+shortLabel H3K4me1_APP23_1xLPS
+longLabel H3K4me1_APP23_1xLPS
+type bigWig
+visibility full
+aggregate transparentOverlay
+showSubtrackColorOnUi on
+
+	track H3K4me1_APP23_1xLPS_1
+	bigDataUrl http://microgliome.biochem.ubc.ca/BigWigs/APP23_H3K4me1_1xLPSrepl1.bw
+	shortLabel H3K4me1 APP23 1xLPS 1
+	longLabel H3K4me1 APP23 1xLPS 1
+	parent H3K4me1_APP23_1xLPS
+	color 198,34,71
+	viewLimits 0:1000
+	type bigWig
+
+	track H3K4me1_APP23_1xLPS_2
+	bigDataUrl http://microgliome.biochem.ubc.ca/BigWigs/APP23_H3K4me1_1xLPSrepl2.bw
+	shortLabel H3K4me1 APP23 1xLPS 2
+	longLabel H3K4me1 APP23 1xLPS 2
+	parent H3K4me1_APP23_1xLPS
+	color 140,34,240
+	viewLimits 0:1000
+	type bigWig
+
+#peak files
+ track H3K4me1_APP23_1xLPS_peaks
+    parent Wendeln2018
+    bigDataUrl http://microgliome.biochem.ubc.ca/BigWigs/Homerpeaks_H3K4me1_APP23_1xLPS.bb
+    shortLabel homer peaks APP23 H3K4me1 1xLPS Wendeln
+    longLabel homer peaks APP23 H3K4me1 1xLPS Wendeln
+    type bigBed
+    visibility squish
+    priority 30
+
+############################################################################
+#APP23 H3K4me1 4xLPS
+############################################################################
+
+track H3K4me1_APP23_4xLPS
+parent Wendeln2018
+container multiWig
+shortLabel H3K4me1_APP23_4xLPS
+longLabel H3K4me1_APP23_4xLPS
+type bigWig
+visibility full
+aggregate transparentOverlay
+showSubtrackColorOnUi on
+
+	track H3K4me1_APP23_4xLPS_1
+	bigDataUrl http://microgliome.biochem.ubc.ca/BigWigs/APP23_H3K4me1_4xLPSrepl1.bw
+	shortLabel H3K4me1 APP23 4xLPS 1
+	longLabel H3K4me1 APP23 4xLPS 1
+	parent H3K4me1_APP23_4xLPS
+	color 198,34,71
+	viewLimits 0:1000
+	type bigWig
+
+	track H3K4me1_APP23_4xLPS_2
+	bigDataUrl http://microgliome.biochem.ubc.ca/BigWigs/APP23_H3K4me1_4xLPSrepl2.bw
+	shortLabel H3K4me1 APP23 4xLPS 2
+	longLabel H3K4me1 APP23 4xLPS 2
+	parent H3K4me1_APP23_4xLPS
+	color 140,34,240
+	viewLimits 0:1000
+	type bigWig
+
+
+#peak files
+ track H3K4me1_APP23_4xLPS_peaks
+    parent Wendeln2018
+    bigDataUrl http://microgliome.biochem.ubc.ca/BigWigs/Homerpeaks_H3K4me1_APP23_4xLPS.bb
+    shortLabel homer peaks APP23 H3K4me1 4xLPS Wendeln
+    longLabel homer peaks APP23 H3K4me1 4xLPS Wendeln
+    type bigBed
+    visibility squish
+    priority 30
+
+############################################################################
+#APP23 Input
+############################################################################
+
+track Input_APP23
+parent Wendeln2018
+container multiWig
+shortLabel Input_APP23
+longLabel Input_APP23
+type bigWig
+visibility full
+aggregate transparentOverlay
+showSubtrackColorOnUi on
+
+	track Input_APP23_1
+	bigDataUrl http://microgliome.biochem.ubc.ca/BigWigs/APP23_input_mixedrepl1.bw
+	shortLabel Input APP23 1
+	longLabel Input APP23 1
+	parent Input_APP23
+	color 198,34,71
+	viewLimits 0:1000
+	type bigWig
+
+	track Input_APP23_2
+	bigDataUrl http://microgliome.biochem.ubc.ca/BigWigs/APP23_input_mixedrepl2.bw
+	shortLabel Input APP23 2
+	longLabel Input APP23 2
+	parent Input_APP23
+	color 140,34,240
+	viewLimits 0:1000
+	type bigWig
+
+
+
+
+
+
+
+
+
+
+
