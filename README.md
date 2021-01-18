@@ -138,6 +138,8 @@ Tag directories for the ATAC-seq experiments were combined into an ex vivo and i
 # 10. Make UCSC genome browser bedgraph and bigwig files
   sbatch UCSCBrowserHOMER.sh 
   
+  Make UCSC track hub for hosting on Ciernia lab web server. See TrackHubmm10_MGEpi_Master.txt for the hub information. Hub can be accessed here: http://genome.ucsc.edu/cgi-bin/hgTracks?db=mm10&hubUrl=http://microgliome.biochem.ubc.ca/BigWigs/TrackHubmm10_MGEpi_Master.txt
+
   
 # 11. Make plots of normalized signal over peak regions
   Peaks_Deeptool_Plots.sh
