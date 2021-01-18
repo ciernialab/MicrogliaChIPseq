@@ -67,7 +67,7 @@ Datatset #20 Microglia isolated from Brain in 9 month old WT or APP23 (all femal
 Datatset #21 Microglia isolated from Brain in 9 month old WT or APP23 (all female) mice ~6 months post PBS, 1xLPS or 4xLPS (.5mg/kg) Input
 
 
-# For each GEO entry teh following was performed. As an example for each step the Gosselin 2017 workflow is shown in detail below. 
+# For each GEO entry the following was performed. As an example for each step the Gosselin 2017 workflow is shown in detail below. 
 
 # 1. Get SRR files
 To find a comprehensive list of the SRR files, we use the Run Selector.
