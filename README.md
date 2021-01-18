@@ -56,6 +56,16 @@ Dataset #17 Microgila isolated from Striatum Input
 
 Dataset #18 Microgila isolated from Cortex Input
 
+Wendeln AC, Degenhardt K, Kaurani L, Gertig M et al. Innate immune memory in the brain shapes neurological disease hallmarks. Nature 2018 Apr;556(7701):332-338. PMID: 29643512
+https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6038912/
+https://www.ncbi.nlm.nih.gov/Traces/study/?acc=PRJNA324251&o=acc_s%3Aa
+
+Datatset #19 Microglia isolated from Brain in 9 month old WT or APP23 (all female) mice ~6 months post PBS, 1xLPS or 4xLPS (.5mg/kg) H3K27ac ChIPseq
+
+Datatset #20 Microglia isolated from Brain in 9 month old WT or APP23 (all female) mice ~6 months post PBS, 1xLPS or 4xLPS (.5mg/kg) H3K4me1 ChIPseq
+
+Datatset #21 Microglia isolated from Brain in 9 month old WT or APP23 (all female) mice ~6 months post PBS, 1xLPS or 4xLPS (.5mg/kg) Input
+
 
 # For each GEO entry teh following was performed. As an example for each step the Gosselin 2017 workflow is shown in detail below. 
 
